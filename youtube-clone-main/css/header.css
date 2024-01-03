@@ -1,0 +1,217 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: var(--bg-color);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+/* Default styles for all header icons */
+.header .left-section .hamburger-menu,
+.header .middle-section .voice-search-button {
+  cursor: pointer;
+  transition: background-color 50ms;
+  &:hover {
+    background-color: var(--icon-bg-color-hover);
+  }
+}
+
+.header .left-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header .left-section .hamburger-menu {
+  height: 40px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.header .left-section .youtube-logo {
+  height: 56px;
+  padding: 18px 14px 18px 16px;
+}
+
+.header .left-section .country-name {
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  color: var(--video-info-primary-color);
+}
+
+.header .middle-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 732px;
+}
+
+.header .search-box {
+  width: 100%;
+  max-width: 632px;
+  height: 40px;
+  padding: 0 4px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header .search-box .search-form {
+  width: 100%;
+  max-width: 568px;
+  height: 40px;
+  flex: 1;
+}
+
+.header .search-box .search-form .search-container {
+  width: 100%;
+  max-width: 536px;
+  height: 40px;
+  padding: 0 4px 0 16px;
+  border: 1px solid var(--search-box-border-color);
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.header .search-box .search-form .search-container .search-input {
+  width: 100%;
+  max-width: 515px;
+  height: 24px;
+  padding: 1px 0;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.header .search-box .search-button {
+  height: 40px;
+  width: 64px;
+  padding: 1px 4px;
+  border-radius: 0;
+  border: 1px solid var(--search-box-border-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--search-btn-bg-color);
+  margin-left: -1px;
+
+  &:hover {
+    background-color: var(--search-btn-hover-bg-color);
+  }
+}
+
+.header .search-box .search-button .search-icon {
+  height: 24px;
+  margin: 0 1rem;
+}
+
+.header .middle-section .voice-search-button {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--icon-bg-color);
+  margin-left: 10px;
+}
+
+.header .middle-section .voice-search-button .voice-search-icon {
+  height: 24px;
+}
+
+.header .right-section {
+  width: 100%;
+  height: 56px;
+  max-width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-right: 20px;
+}
+
+.header .right-section .upload-icon-container,
+.header .right-section .notifications-icon-container {
+  vertical-align: middle;
+  height: 40px;
+}
+
+.header .right-section .search-button,
+.header .right-section .voice-search-button {
+  vertical-align: middle;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  display: none;
+  background-color: transparent;
+}
+
+.header .right-section .search-button .search-icon,
+.header .right-section .voice-search-button .voice-search-icon,
+.header .right-section .upload-icon-container .upload-icon,
+.header .right-section .notifications-icon-container .notifications-icon {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  &:hover {
+    background-color: var(--icon-bg-color-hover);
+  }
+}
+
+.header .right-section .current-user-picture {
+  height: 32px;
+  border-radius: 20px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #dc3545;
+  color: #fff;
+  font-family: roboto, Arial, sans-serif;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 656px) {
+  .header .middle-section {
+    display: none;
+  }
+
+  .header .right-section {
+    gap: 5px;
+    margin: 0;
+  }
+
+  .header .right-section .current-user-picture {
+    margin: 0;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .header .right-section .search-button,
+  .header .right-section .voice-search-button {
+    display: flex;
+  }
+}

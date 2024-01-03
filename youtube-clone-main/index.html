@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>YouTube Clone</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/video-keywords.css" />
+    <link rel="stylesheet" href="./css/video.css" />
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <!-- Header section start -->
+    <div class="header">
+      <div class="left-section">
+        <img
+          src="./icons/hamburger-menu.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu"
+        />
+        <img
+          src="./icons/youtube-logo.svg"
+          alt="youtube-logo"
+          class="youtube-logo"
+        />
+        <div class="country-name">IN</div>
+      </div>
+      <div class="middle-section">
+        <div class="search-box">
+          <form class="search-form">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search" />
+            </div>
+          </form>
+          <button class="search-button">
+            <img class="search-icon" src="./icons/search.svg" alt="" />
+          </button>
+        </div>
+        <button class="voice-search-button">
+          <img
+            src="./icons/voice-search-icon.svg"
+            alt=""
+            class="voice-search-icon"
+          />
+        </button>
+      </div>
+      <div class="right-section">
+        <!-- mobile -->
+        <button class="search-button">
+          <img class="search-icon" src="./icons/search.svg" alt="" />
+        </button>
+
+        <button class="voice-search-button">
+          <img
+            src="./icons/voice-search-icon.svg"
+            alt=""
+            class="voice-search-icon"
+          />
+        </button>
+        <!-- mobile -->
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="./icons/upload.svg" alt="" />
+        </div>
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-icon"
+            src="./icons/notifications.svg"
+            alt=""
+          />
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="./channel-picture/my-channel.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Header section end -->
+
+    <!-- Sidebar section start -->
+    <div class="sidebar">
+      <!-- Sidebar Section 1 -->
+      <div class="sidebar-section-1">
+        <div class="sidebar-link">
+          <img src="./icons/home.svg" alt="" />
+          <div>home</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/shorts.svg" alt="" />
+          <div>Shorts</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/subscriptions.svg" alt="" />
+          <div>Subscriptions</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 2 -->
+      <div class="sidebar-section-2">
+        <div class="sidebar-link sidebar-section-title">
+          <div>You</div>
+          <img src="./icons/right-arrow.svg" alt="" />
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/your-channel.svg" alt="" />
+          <div>Your channel</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/history.svg" alt="" />
+          <div>history</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/your-videos.svg" alt="" />
+          <div>your videos</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/your-courses.svg" alt="" />
+          <div>your courses</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/watch-later.svg" alt="" />
+          <div>watch later</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/down-arrow.svg" alt="" />
+          <div>Show more</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 3 -->
+      <div class="sidebar-section-3">
+        <div class="sidebar-section-title">Subscriptions</div>
+        <!-- ! The name doesn't match channel-picture (FIX THIS LATER!) -->
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-1.jpeg" alt="" />
+          <div>Alice Johnson</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-10.jpeg" alt="" />
+          <div>Bob Smith</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-11.jpeg" alt="" />
+          <div>Charlie Davis</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-12.jpeg" alt="" />
+          <div>David Jones</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-2.jpeg" alt="" />
+          <div>Eva Brown</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-3.jpeg" alt="" />
+          <div>Frank Miller</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-4.jpeg" alt="" />
+          <div>Grace Taylor</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./channel-picture/channel-5.jpeg" alt="" />
+          <div>Henry Clark</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/down-arrow.svg" alt="" />
+          <div>Show 10 more</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 4 -->
+      <div class="sidebar-section-4">
+        <div class="sidebar-section-title">Explore</div>
+        <div class="sidebar-link">
+          <img src="./icons/trending.svg" alt="" />
+          <div>trending</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/shopping.svg" alt="" />
+          <div>shopping</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/music.svg" alt="" />
+          <div>music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/films.svg" alt="" />
+          <div>films</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/gaming.svg" alt="" />
+          <div>gaming</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/news.svg" alt="" />
+          <div>news</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/sport.svg" alt="" />
+          <div>sport</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/your-courses.svg" alt="" />
+          <div>Learning</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/fashion-beauty.svg" alt="" />
+          <div>fashion & beauty</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/podcasts.svg" alt="" />
+          <div>podcasts</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 5 -->
+      <div class="sidebar-section-5">
+        <div class="sidebar-section-title">More from YouTube</div>
+        <div class="sidebar-link">
+          <img src="./icons/youtube-premium.svg" alt="" />
+          <div>youtube premium</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/youtube-studio.svg" alt="" />
+          <div>youtube studio</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/youtube-music.svg" alt="" />
+          <div>youtube music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/youtube-kids.svg" alt="" />
+          <div>youtube kids</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 6 -->
+      <div class="sidebar-section-6">
+        <div class="sidebar-link">
+          <img src="./icons/settings.svg" alt="" />
+          <div>settings</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/report-history.svg" alt="" />
+          <div>report history</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/help.svg" alt="" />
+          <div>help</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./icons/send-feeback.svg" alt="" />
+          <div>send feeback</div>
+        </div>
+      </div>
+      <!-- Sidebar Section 7 -->
+      <div class="sidebar-section-7">
+        <div class="sidebar-section-7-top">
+          <a href="#">About</a>
+          <a href="#">Press</a>
+          <a href="#">Copyright</a>
+          <a href="#">Contact us</a>
+          <a href="#">Creator</a>
+          <a href="#">Advertise</a>
+          <a href="#">Developers</a>
+        </div>
+        <div class="sidebar-section-7-middle">
+          <a href="#">Terms</a> <a href="#">Privacy</a>
+          <a href="#">Policy & Safety</a> <a href="#">How YouTube works</a>
+          <a href="#">Test</a>
+          <a href="#">new features</a>
+        </div>
+        <div class="sidebar-section-7-bottom">
+          <span>© 2024 Google LLC</span>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar section end -->
+
+    <!-- video keywords section start -->
+    <div class="video-keywords-container">
+      <div class="video-keywords selected-keyword">all</div>
+      <div class="video-keywords">technology</div>
+      <div class="video-keywords">music</div>
+      <div class="video-keywords">gaming</div>
+      <div class="video-keywords">travel vlogs</div>
+      <div class="video-keywords">cooking recipes</div>
+      <div class="video-keywords">fitness workouts</div>
+      <div class="video-keywords">movie reviews</div>
+      <div class="video-keywords">DIY projects</div>
+      <div class="video-keywords">fashion trends</div>
+      <div class="video-keywords">comedy sketches</div>
+      <div class="video-keywords">educational content</div>
+      <div class="video-keywords">pet videos</div>
+      <div class="video-keywords">book recommendations</div>
+      <div class="video-keywords">digital art tutorials</div>
+      <div class="video-keywords">celebrity interviews</div>
+      <div class="video-keywords">technology</div>
+    </div>
+    <!-- video keywords section end -->
+
+    <!-- video section start -->
+    <div class="video"></div>
+    <!-- video section end -->
+  </body>
+</html>
